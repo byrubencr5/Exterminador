@@ -1,0 +1,43 @@
+
+/* Estilos similares a tu página principal con degradado azul marino */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #001f3f, #003366);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    }
+
+    a.button {
+      background: linear-gradient(45deg, #004080, #006699);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(0,51,102,0.5);
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: linear-gradient(45deg, #006699, #004080);
+    }    

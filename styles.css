@@ -1,0 +1,229 @@
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+/* Pantallas pequeñas (teléfonos) */
+@media (max-width: 460px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #f4f7fa;
+}
+.logo{
+    display: flex;
+    align-items: center;           /* Centra verticalmente */
+    justify-content: center;
+    padding: 5px;                  /* Un poco de espacio interno */
+    max-width: 200px;              /* Controla el ancho máximo del contenedor */
+    width: 100%;
+    box-sizing: border-box;        /* Para que el padding no expanda el ancho */
+}
+#logotipo{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;           /* Para que la imagen mantenga proporción */
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+.inicio{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #001f3f, #004080);
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.img2{
+    display: flex;
+    align-items: center;           /* Centra verticalmente */
+    justify-content: center;
+    padding: 5px;                  /* Un poco de espacio interno */
+    max-width: 900px;              /* Controla el ancho máximo del contenedor */
+    width: 100%;
+    box-sizing: border-box;        /* Para que el padding no expanda el ancho */
+}
+#picFamilia{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    object-fit: contain;           /* Para que la imagen mantenga proporción */
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0, 31, 63, 0.6), rgba(0, 64, 128, 0.6)),
+    url('https://images.unsplash.com/photo-1598188305080-38081f785309?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero .btn {
+  background: #00aaff;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #008ecc;
+}
+
+/* Services */
+.services {
+  background: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.service {
+  background: #e0f0ff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0, 0, 50, 0.1);
+}
+
+/* Contact */
+.contact {
+  background: linear-gradient(to right, #003366, #005580);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact button {
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #008ecc;
+}
+
+/* Footer */
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+/* Botones flotantes */
+.float-btn {
+  position: fixed;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.float-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+  bottom: 85px;
+}
+
+.phone {
+  bottom: 20px;
+}
